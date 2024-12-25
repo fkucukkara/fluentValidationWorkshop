@@ -1,0 +1,17 @@
+@MinimalAPI_HostAddress = http://localhost:5149
+
+### Get All
+GET {{MinimalAPI_HostAddress}}/employee
+Accept: application/json
+
+### Post
+POST {{MinimalAPI_HostAddress}}/employee
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": -1,
+  "name": "Alice",
+  "department": "Marketing",
+  "designation": "Manager"
+}

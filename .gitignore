@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/FluentValidationWorkshop
+/API/bin/Debug/net9.0
+/API/obj
+/Domain/bin/Debug/net9.0
+/Domain/obj
+/MinimalAPI/bin/Debug/net9.0
+/MinimalAPI/obj
+/Validator/bin/Debug/net9.0
+/Validator/obj

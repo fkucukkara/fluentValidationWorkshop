@@ -1,0 +1,29 @@
+@API_HostAddress = http://localhost:5234
+
+### Get All
+GET {{API_HostAddress}}/employee
+Accept: application/json
+
+### Post
+POST {{API_HostAddress}}/employee
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 0,
+  "name": "Alice",
+  "department": "Marketing",
+  "designation": "Manager"
+}
+
+### Put
+PUT {{API_HostAddress}}/employee/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 0,
+  "name": "Alice",
+  "department": "Marketing",
+  "designation": "Manager"
+}
