@@ -1,6 +1,6 @@
 using Domain;
 using FluentValidation;
-using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 using Validator;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,8 +13,22 @@ app.MapGet("/employee", () =>
     return InMemoryRepository.InMemoryEmployeeRepository;
 });
 
-app.MapPost("/employee", (Employee employee) =>
+app.MapPost("/employee", async (Employee employee, IValidator<Employee> validator) =>
 {
+    var validationResult = await validator.ValidateAsync(employee);
+    if (!validationResult.IsValid)
+    {
+        var problemDetails = new ValidationProblemDetails
+        {
+            Title = "Validation Failed",
+            Status = StatusCodes.Status400BadRequest,
+            Detail = "One or more validation errors occured!",
+            Instance = "/employee",
+            Errors = validationResult.ToDictionary()
+        };
+        return Results.BadRequest(problemDetails);
+    }
+
     if (InMemoryRepository.InMemoryEmployeeRepository.Any(e => e.Id == employee.Id))
         return Results.BadRequest($"Employee with ID {employee.Id} already exists.");
 
