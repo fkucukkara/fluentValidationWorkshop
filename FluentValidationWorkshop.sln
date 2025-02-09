@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{FE015E24-DD46-4987-8B7E-2F9EC985C112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "src\API\API.csproj", "{FE015E24-DD46-4987-8B7E-2F9EC985C112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Validator.csproj", "{ED0013FD-E8BB-4A73-8DAA-542E4850BE94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "src\Libraries\Validator\Validator.csproj", "{ED0013FD-E8BB-4A73-8DAA-542E4850BE94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{59D48127-2B4D-4A18-B36F-1AE9E72FCF8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Libraries\Domain\Domain.csproj", "{59D48127-2B4D-4A18-B36F-1AE9E72FCF8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI", "MinimalAPI\MinimalAPI.csproj", "{3255D7BA-1F82-40AF-A58E-25CB38B3F03D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI", "src\MinimalAPI\MinimalAPI.csproj", "{3255D7BA-1F82-40AF-A58E-25CB38B3F03D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F59852E6-12B6-4921-9555-A7549AC24472}"
 EndProject

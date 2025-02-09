@@ -12,3 +12,11 @@
 /Validator/bin/Debug/net9.0
 /Validator/obj
 /.vs/ProjectEvaluation
+/src/API/bin/Debug/net9.0
+/src/API/obj
+/src/Libraries/Domain/bin/Debug/net9.0
+/src/Libraries/Domain/obj
+/src/Libraries/Validator/bin/Debug/net9.0
+/src/Libraries/Validator/obj
+/src/MinimalAPI/bin/Debug/net9.0
+/src/MinimalAPI/obj
